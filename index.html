@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pikachu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="js/jh-core.js"></script>
+    <link type="text/css" rel="Stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <script type="text/javascript">
+        document.domain=location.hostname;
+        var oStaticURL='';
+        jh.ready(
+            function(){
+                jh(".mainscreen").attr("class","mt"+Math.round(Math.random(4)+1));
+                var el;
+                loadImage();
+            }
+        );
+    </script>
+    <script>
+        function addEvent(obj, eventName, func) {
+            if (obj.attachEvent){
+                obj.attachEvent("on" + eventName, func);}
+            else if(obj.addEventListener){
+                obj.addEventListener(eventName, func, true);}
+            else{
+                obj["on" + eventName] = func;}
+        }
+    </script>
+
+    <script type="text/javascript">
+        var elem = document.getElementById(id);
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* source code: https://www.w3schools.com/howto/howto_js_fullscreen.asp */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="loading">
+    <table class="mainscreen">
+        <thead>
+        <tr>
+            <th class="level">
+                <h2 class="txt-level">Level<span id="level">1</span></h2>
+            </th>
+            <th class="score">
+                <h2 class="txt-score">Score<span id="score">0</span></h2>
+            </th>
+            <th class="blood">
+                <h2 class="txt-blood">Change<span id="blood">30</span></h2>
+            </th>
+            <th class="timebar">
+                <div id="timebar">
+                </div>
+            </th>
+            <th>
+                <input type="button" id="change-sound" name="Button" class="soundOn" value="" onclick="el.changesound()">
+            </th>
+            <th>
+                <input type="button" name="Button" id="change-block" value="" onclick="change_block()">
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td id="board" class="playing"></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>
+                <input type="button" id="replay" name="Button" value="" onclick="el.disp_confirm()">
+            </td>
+            <td>
+                <input type="button" id="pause-game" name="Button" value="" onclick="el.pas_confirm()">
+            </td>
+            <td>
+                <input type="button" id="next-level" name="Button" value="" onclick="el.goNextLV()">
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+<script type="text/javascript" src="js/pikachu.js"></script>
+<audio id="audiosound2" __idm_id__="139265"><source src="sound/sound2.mp3"><source src="sound/sound2.ogg"></audio>
+<audio id="audiosound1"><source src="sound/sound1.mp3"><source src="sound/sound1.ogg"></audio>
+<audio id="audiosound4"><source src="sound/sound4.mp3"><source src="sound/sound4.ogg"></audio>
+</body>
+</html>

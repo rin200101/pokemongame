@@ -1,0 +1,162 @@
+body {
+  top: 0;
+  font-family: sans-serif;
+  background-color: #78938A;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+
+.mainscreen {
+  position: relative;
+  top: 0;
+  border: 0 !important;
+  padding-top: 0;
+  width: 75%;
+  min-height: 700px; }
+
+#board {
+  position: relative;
+  width: 100%;
+  top: -50px;
+  left: 150px; }
+  #board img {
+    width: 50px;
+    border-radius: 15px;
+    opacity: 1;
+    border-color: #FFCC8F !important;
+    box-sizing: border-box;
+    box-shadow: #ffcc8f 3px 3px 4px; }
+
+.timebar {
+  position: relative; }
+
+#timebar {
+  position: absolute;
+  top: 5px;
+  left: -600px;
+  height: 100px;
+  width: auto;
+  background: url(../images/clock.png) no-repeat;
+  background-size: 70%; }
+
+.level {
+  position: absolute;
+  left: 80px;
+  top: 0; }
+
+.txt-level {
+  display: inline-block;
+  position: absolute;
+  color: #F5DF99;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: sans-serif; }
+
+.score {
+  position: absolute;
+  left: 180px;
+  top: 0; }
+
+.txt-score {
+  display: inline-block;
+  position: absolute;
+  color: #F5DF99;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: sans-serif; }
+
+.blood {
+  position: absolute;
+  left: 280px;
+  top: 0; }
+
+.txt-blood {
+  display: inline-block;
+  position: absolute;
+  color: #F5DF99;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: sans-serif; }
+
+#score, #blood, #level {
+  display: block;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+
+.soundOff {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../images/soundon.png) no-repeat !important;
+  background-size: 100% !important;
+  right: 80px; }
+
+.soundOn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../images/soundon.png) no-repeat !important;
+  background-size: 100% !important;
+  right: 80px; }
+
+#change-block {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../images/change.png) no-repeat !important;
+  background-size: 100% !important;
+  right: 100px; }
+
+#replay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../images/replay.png) no-repeat !important;
+  background-size: 100% !important;
+  left: 550px;
+  bottom: 30px; }
+
+#pause-game {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../images/pause.png) no-repeat !important;
+  background-size: 100% !important;
+  right: 400px;
+  bottom: 30px; }
+
+#next-level {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../images/next.png) no-repeat !important;
+  background-size: 100% !important;
+  right: 350px;
+  bottom: 30px; }
+
+#replay, #pause-game, #next-level, #change-sound, #change-block {
+  cursor: pointer;
+  margin-left: 0px;
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 25px;
+  background: none;
+  padding: 5px;
+  border: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+#replay:hover, #pause-game:hover, #next-level:hover, #change-sound:hover, #change-block:hover {
+  border: 1px solid #FFE3A9;
+  -moz-box-shadow: 0px 0px 10px #FFE3A9;
+  -webkit-box-shadow: 0px 0px 10px #FFE3A9;
+  box-shadow: 0px 0px 10px #ffe506; }
+
+/*# sourceMappingURL=style.css.map */
